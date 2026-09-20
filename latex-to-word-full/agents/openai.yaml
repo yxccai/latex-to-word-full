@@ -1,0 +1,4 @@
+interface:
+  display_name: "LaTeX to Word Full"
+  short_description: "Build fully editable Word documents from LaTeX or Markdown"
+  default_prompt: "Use $latex-to-word-full to convert the source into a fully editable, cross-referenced Word document and verify the rendered pages."
