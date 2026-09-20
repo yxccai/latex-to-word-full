@@ -7,6 +7,8 @@
 [![Output](https://img.shields.io/badge/output-editable%20DOCX-2b579a?style=flat-square)](SKILL.md)
 [![QA](https://img.shields.io/badge/QA-render%20%2B%20structural%20checks-16a34a?style=flat-square)](references/visual-qa-checklist.md)
 
+**[English](README.md) | [中文](README.zh-CN.md)**
+
 ## The goal
 
 Most “LaTeX → Word” conversions preserve the words but lose the document.
@@ -15,17 +17,9 @@ This skill is designed for the harder version of the problem: a Word file that c
 
 It treats the manuscript as a structured document rather than a block of text:
 
-```mermaid
-flowchart LR
-    A[LaTeX / Markdown project] --> B[Source preflight]
-    B --> C[Semantic document model]
-    C --> D[Editable DOCX generation]
-    D --> E[OOXML fields and styles]
-    E --> F[Render to PDF / PNG]
-    F --> G[Visual + structural QA]
-    G -->|fix and rebuild| C
-    G --> H[Delivery-ready Word file]
-```
+| 1 · Preflight | 2 · Model | 3 · Generate | 4 · Verify |
+| --- | --- | --- | --- |
+| Inspect source, labels, assets, and citations | Preserve semantic blocks and relationships | Build editable DOCX, fields, styles, and tables | Render pages, validate OOXML, and iterate |
 
 ## What it preserves
 
@@ -154,4 +148,4 @@ An existing manually formatted DOCX is useful when exact margins, fonts, paragra
 
 ## 中文简介
 
-这是一个面向 Codex 和其他 agent 的通用 LaTeX/Markdown → Word skill。它不仅转换文字，还会处理原生公式、自动编号、文献和图表交叉引用、三线表、图片排版、分页以及最终的逐页截图检查，目标是生成真正可编辑、可维护、可验证的功能完整 Word 文档。
+中文完整说明请见 [`README.zh-CN.md`](README.zh-CN.md)。
